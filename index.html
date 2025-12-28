@@ -1,225 +1,334 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Galuh Abada</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio | Galuh Abada</title>
+  <meta name="description" content="Portfolio Galuh Abada - Teknik Komputer. Project, skill, dan kontak." />
 
+  <!-- Icons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <header class="header">
-    <a href="#home" class="logo">Portfolio</a>
+  <!-- Background glow -->
+  <div class="bg-glow" aria-hidden="true"></div>
 
-    <i class="bx bx-menu" id="menu-icon"></i>
+  <!-- Header -->
+  <header class="header" id="top">
+    <a class="brand" href="#home">
+      <span class="brand__dot"></span>
+      <span class="brand__text">Galuh<span class="accent">.</span></span>
+    </a>
 
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Project</a>
-      <a href="#contact">Contact</a>
+    <nav class="nav" aria-label="Navigasi">
+      <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <i class="bx bx-menu"></i>
+      </button>
+
+      <div class="nav__panel" id="navPanel">
+        <a class="nav__link active" href="#home">Home</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#contact">Contact</a>
+
+        <div class="nav__actions">
+          <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Ganti tema">
+            <i class="bx bx-moon"></i>
+            <span>Theme</span>
+          </button>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <section class="home" id="home">
-    <div class="home-content">
-      <h3>Selamat datang di portfolio</h3>
-      <h1>Galuh Abada</h1>
-      <h3>Dan Saya Seorang <span>Mahasiswa</span></h3>
-      <p>
-        Saya adalah mahasiswa S1 Teknik Komputer yang bersemangat dan berdedikasi.
-        Portfolio ini adalah wadah bagi perjalanan dan pencapaian saya dalam dunia IT.
-        Jelajahi proyek-proyek saya, pemikiran, dan pengalaman yang saya bagikan di sini.
-        Terima kasih atas kunjungannya, dan saya harap Anda menemukan inspirasi dan wawasan baru di sini.
-      </p>
+  <!-- Main -->
+  <main>
+    <!-- HERO -->
+    <section class="section hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <p class="pill">
+            <i class="bx bxs-bolt-circle"></i>
+            Portfolio Teknik Komputer
+          </p>
 
-      <div class="sosial-media">
-        <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=galuh_abada@teknokrat.ac.id" target="_blank" rel="noopener">
-          <i class="bx bx-envelope"></i>
-        </a>
-        <a href="https://www.instagram.com/abadagaluh?igsh=MWkzMzJrczNtamFleQ==" target="_blank" rel="noopener">
-          <i class="bx bxl-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/galuh-abada-mahasiswa-ab223029b" target="_blank" rel="noopener">
-          <i class="bx bxl-linkedin"></i>
-        </a>
-        <a href="https://youtube.com/@GaluhAbada?si=_GckcBqFh_OjWCla" target="_blank" rel="noopener">
-          <i class="bx bxl-youtube"></i>
-        </a>
-      </div>
+          <h1 class="hero__title">
+            Halo, saya <span class="accent">Galuh Abada</span>
+          </h1>
 
-      <a href="link_to_your_cv.pdf" download class="btn">Download CV</a>
-    </div>
+          <p class="hero__subtitle">
+            Saya membangun project web & IoT, fokus pada solusi yang rapi, cepat, dan mudah dipakai.
+            Di sini kamu bisa lihat project, skill, dan cara menghubungi saya.
+          </p>
 
-    <div class="home-img">
-      <img src="foto/1.png" alt="Foto Galuh Abada" />
-    </div>
-  </section>
+          <div class="hero__cta">
+            <a class="btn" href="#projects">
+              Lihat Projects
+              <i class="bx bx-right-arrow-alt"></i>
+            </a>
 
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="foto/2.png" alt="Foto About" />
-    </div>
+            <!-- Ganti link file CV kamu -->
+            <a class="btn btn--ghost" href="assets/CV-Galuh-Abada.pdf" download>
+              Download CV
+              <i class="bx bx-download"></i>
+            </a>
+          </div>
 
-    <div class="about-content">
-      <h2 class="heading">About <span>me</span></h2>
-      <h3>Galuh Abada</h3>
-      <p>
-        Halo, saya Galuh Abada, seorang mahasiswa di bidang Teknik Komputer yang bersemangat dan penuh dedikasi.
-        Sejak awal, minat saya dalam dunia teknologi terbangun dengan kuat, mendorong saya untuk mengeksplorasi
-        dan memahami lebih dalam setiap aspek yang terkait dengan IT.
-        <br><br>
-        Sejak memulai perjalanan akademis saya, saya telah memperdalam pemahaman saya tentang berbagai konsep dan
-        teknologi di bidang komputer. Saya percaya bahwa setiap tantangan adalah kesempatan untuk belajar, dan
-        itulah yang mendorong saya untuk terus meningkatkan kemampuan saya melalui proyek-proyek praktis dan studi mandiri.
-        <br><br>
-        Selama masa perkuliahan, saya telah terlibat dalam berbagai proyek, mulai dari pengembangan perangkat lunak
-        hingga jaringan komputer. Proyek-proyek ini tidak hanya memperluas wawasan saya, tetapi juga mengasah kemampuan
-        praktis saya dalam menerapkan konsep-konsep teoritis ke dalam solusi yang nyata.
-        <br><br>
-        Terima kasih telah meluangkan waktu untuk membaca penjelasan singkat tentang diri saya.
-      </p>
-      <a href="#portfolio" class="btn">Lihat Project</a>
-    </div>
-  </section>
+          <div class="social">
+            <a class="social__btn" href="mailto:galuh_abada@teknokrat.ac.id" aria-label="Email">
+              <i class="bx bx-envelope"></i>
+            </a>
+            <a class="social__btn" href="https://www.instagram.com/abadagaluh" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <i class="bx bxl-instagram"></i>
+            </a>
+            <a class="social__btn" href="https://www.linkedin.com/in/galuh-abada-mahasiswa-ab223029b/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a class="social__btn" href="https://youtube.com/@GaluhAbada" target="_blank" rel="noreferrer" aria-label="YouTube">
+              <i class="bx bxl-youtube"></i>
+            </a>
+          </div>
 
-  <section class="services" id="services">
-    <h2 class="heading">Our <span>Services</span></h2>
+          <div class="hero__badges">
+            <div class="badge">
+              <div class="badge__top">Status</div>
+              <div class="badge__bottom">Mahasiswa</div>
+            </div>
+            <div class="badge">
+              <div class="badge__top">Minat</div>
+              <div class="badge__bottom">Web • IoT</div>
+            </div>
+            <div class="badge">
+              <div class="badge__top">Lokasi</div>
+              <div class="badge__bottom">Indonesia</div>
+            </div>
+          </div>
+        </div>
 
-    <div class="services-container">
-      <div class="services-box">
-        <i class="bx bx-code-alt"></i>
-        <h3>Web Development</h3>
-        <p>Membangun website portfolio, landing page, dan website sederhana yang responsif.</p>
-        <a href="#contact" class="btn">Contact</a>
-      </div>
-
-      <div class="services-box">
-        <i class="bx bxs-paint"></i>
-        <h3>Graphic Design</h3>
-        <p>Desain visual sederhana untuk kebutuhan poster, thumbnail, dan branding.</p>
-        <a href="#contact" class="btn">Contact</a>
-      </div>
-
-      <div class="services-box">
-        <i class="bx bx-line-chart"></i>
-        <h3>Digital Marketing</h3>
-        <p>Membantu konten promosi dasar dan strategi posting untuk media sosial.</p>
-        <a href="#contact" class="btn">Contact</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="portfolio" id="portfolio">
-    <h2 class="heading">Latest <span>Project</span></h2>
-
-    <div class="portfolio-container">
-      <div class="portfolio-box">
-        <img src="foto/logo1.png" alt="Project 1" />
-        <div class="portfolio-layer">
-          <h4>Web Design</h4>
-          <p>3 Tampilan Halaman Parallax</p>
-          <a href="https://galuh1305.github.io/Parallax.github.io/" target="_blank" rel="noopener">
-            <i class="bx bx-link-external"></i>
-          </a>
+        <div class="hero__media reveal">
+          <div class="hero__card">
+            <img class="hero__img" src="assets/img/profile.jpg" alt="Foto Galuh Abada" />
+            <div class="hero__glass">
+              <div class="hero__name">Galuh Abada</div>
+              <div class="hero__role">Computer Engineering Student</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="portfolio-box">
-        <img src="foto/logo1.png" alt="Project 2" />
-        <div class="portfolio-layer">
-          <h4>Web Design</h4>
-          <p>Project berikutnya (isi deskripsi singkat).</p>
-          <a href="#" target="_blank" rel="noopener">
-            <i class="bx bx-link-external"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="foto/logo1.png" alt="Project 3" />
-        <div class="portfolio-layer">
-          <h4>Web Design</h4>
-          <p>Project berikutnya (isi deskripsi singkat).</p>
-          <a href="#" target="_blank" rel="noopener">
-            <i class="bx bx-link-external"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="foto/logo1.png" alt="Project 4" />
-        <div class="portfolio-layer">
-          <h4>Web Design</h4>
-          <p>Project berikutnya (isi deskripsi singkat).</p>
-          <a href="#" target="_blank" rel="noopener">
-            <i class="bx bx-link-external"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="foto/logo1.png" alt="Project 5" />
-        <div class="portfolio-layer">
-          <h4>Web Design</h4>
-          <p>Project berikutnya (isi deskripsi singkat).</p>
-          <a href="#" target="_blank" rel="noopener">
-            <i class="bx bx-link-external"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="portfolio-box">
-        <img src="foto/logo1.png" alt="Project 6" />
-        <div class="portfolio-layer">
-          <h4>Web Design</h4>
-          <p>Project berikutnya (isi deskripsi singkat).</p>
-          <a href="#" target="_blank" rel="noopener">
-            <i class="bx bx-link-external"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me!</span></h2>
-
-    <form action="mailto:galuh_abada@teknokrat.ac.id" method="post" enctype="text/plain">
-      <div class="input-box">
-        <input type="text" placeholder="Full Name" />
-        <input type="email" placeholder="Email Address" />
-      </div>
-
-      <div class="input-box">
-        <input type="number" placeholder="Mobile Number" />
-        <input type="text" placeholder="Email Subject" />
-      </div>
-
-      <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
-      <input type="submit" value="Send Message" class="btn" />
-    </form>
-
-    <div class="heading">
-      <a href="https://api.whatsapp.com/send/?phone=%2B6285609041393&text&type=phone_number&app_absent=0" target="_blank" rel="noopener">
-        <button class="btn" type="button">Whatsapp</button>
+      <a class="scrollhint" href="#about" aria-label="Scroll ke About">
+        <span class="scrollhint__dot"></span>
       </a>
-    </div>
-  </section>
+    </section>
 
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__media reveal">
+          <img class="about__img" src="assets/img/about.jpg" alt="Foto About" />
+        </div>
+
+        <div class="about__text reveal">
+          <h2 class="h2">About <span class="accent">Me</span></h2>
+          <p class="lead">
+            Saya Galuh Abada, mahasiswa Teknik Komputer yang suka membangun produk dari ide sampai jadi.
+            Saya terbiasa membuat UI web, integrasi data, dan project IoT berbasis sensor.
+          </p>
+
+          <div class="about__cards">
+            <div class="mini">
+              <i class="bx bx-code-alt"></i>
+              <div>
+                <div class="mini__title">Web Dev</div>
+                <div class="mini__desc">Landing page, portfolio, dashboard sederhana</div>
+              </div>
+            </div>
+            <div class="mini">
+              <i class="bx bx-chip"></i>
+              <div>
+                <div class="mini__title">IoT</div>
+                <div class="mini__desc">ESP32, sensor, integrasi database</div>
+              </div>
+            </div>
+            <div class="mini">
+              <i class="bx bx-line-chart"></i>
+              <div>
+                <div class="mini__title">Growth</div>
+                <div class="mini__desc">Suka belajar hal baru & iterasi cepat</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__actions">
+            <a class="btn" href="#contact">
+              Kontak Saya
+              <i class="bx bx-send"></i>
+            </a>
+            <a class="btn btn--ghost" href="#projects">
+              Lihat Project
+              <i class="bx bx-layer"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--muted" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Skills <span class="accent">Stack</span></h2>
+          <p class="sub">Skill utama yang sering saya pakai untuk ngerjain project.</p>
+        </div>
+
+        <div class="grid skills reveal">
+          <div class="skill">
+            <div class="skill__top">
+              <i class="bx bxl-html5"></i>
+              <span>HTML</span>
+            </div>
+            <div class="bar"><span style="width: 90%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill__top">
+              <i class="bx bxl-css3"></i>
+              <span>CSS</span>
+            </div>
+            <div class="bar"><span style="width: 85%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill__top">
+              <i class="bx bxl-javascript"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="bar"><span style="width: 75%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill__top">
+              <i class="bx bx-data"></i>
+              <span>Database</span>
+            </div>
+            <div class="bar"><span style="width: 70%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill__top">
+              <i class="bx bx-chip"></i>
+              <span>ESP32 / IoT</span>
+            </div>
+            <div class="bar"><span style="width: 80%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill__top">
+              <i class="bx bx-git-branch"></i>
+              <span>Git/GitHub</span>
+            </div>
+            <div class="bar"><span style="width: 75%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Latest <span class="accent">Projects</span></h2>
+          <p class="sub">
+            Nambah project itu gampang: edit file <code>js/projects.js</code> aja.
+          </p>
+        </div>
+
+        <div class="projects__toolbar reveal">
+          <input id="searchInput" class="input" type="search" placeholder="Cari project... (contoh: IoT, Web, Dashboard)" />
+          <div class="chips" id="chipContainer"></div>
+        </div>
+
+        <div class="grid projects" id="projectGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--muted" id="contact">
+      <div class="container contact">
+        <div class="contact__text reveal">
+          <h2 class="h2">Contact <span class="accent">Me</span></h2>
+          <p class="sub">
+            Kalau mau kerja sama / tanya project, kirim pesan lewat form atau WhatsApp.
+          </p>
+
+          <div class="contact__cards">
+            <a class="contact__card" href="mailto:galuh_abada@teknokrat.ac.id">
+              <i class="bx bx-envelope"></i>
+              <div>
+                <div class="contact__title">Email</div>
+                <div class="contact__desc">galuh_abada@teknokrat.ac.id</div>
+              </div>
+            </a>
+
+            <a class="contact__card" target="_blank" rel="noreferrer"
+               href="https://api.whatsapp.com/send/?phone=%2B6285609041393&text=Halo%20Galuh,%20saya%20mau%20tanya%20tentang%20project&type=phone_number&app_absent=0">
+              <i class="bx bxl-whatsapp"></i>
+              <div>
+                <div class="contact__title">WhatsApp</div>
+                <div class="contact__desc">Chat langsung</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="form reveal" id="contactForm">
+          <div class="form__row">
+            <input class="input" type="text" id="name" placeholder="Nama" required />
+            <input class="input" type="email" id="email" placeholder="Email" required />
+          </div>
+          <input class="input" type="text" id="subject" placeholder="Subjek" required />
+          <textarea class="input textarea" id="message" placeholder="Pesan..." rows="6" required></textarea>
+
+          <button class="btn" type="submit">
+            Kirim via Email
+            <i class="bx bx-send"></i>
+          </button>
+
+          <p class="form__hint">
+            Tombol ini akan membuka aplikasi email (Gmail/Outlook) dengan template pesan.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer class="footer">
-    <div class="footer-text">
-      <p>Copyright &copy; 2024 by Galuh Abada | All Rights Reserved.</p>
-    </div>
-
-    <div class="footer-icontop">
-      <a href="#home"><i class="bx bxs-arrow-to-top"></i></a>
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Galuh Abada. All rights reserved.</p>
+      <a class="toTop" href="#top" aria-label="Kembali ke atas">
+        <i class="bx bxs-arrow-to-top"></i>
+      </a>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <!-- Modal -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close="true"></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-label="Detail project">
+      <button class="modal__close" type="button" data-close="true" aria-label="Tutup">
+        <i class="bx bx-x"></i>
+      </button>
+
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
