@@ -11,12 +11,12 @@ window.PROJECTS = [
     repo: ""
   },
   {
-    title: "Parallax Website",
-    description: "3 tampilan halaman parallax. Responsive & smooth scroll.",
-    tags: ["Web", "HTML", "CSS", "JS"],
-   // image: "#",
-    live: "#",
-    repo: "" // isi kalau ada repo github project
+    title: "Vigenère Cipher",
+    description: "untuk enkripsi dan dekripsi teks menggunakan algoritma Vigenère.",
+    tags: ["Web", "JavaScript", "Cipher"],
+    image: "../assets/img/project2.png",
+    live: "https://galuh1305.github.io/vigenere_chiper/ ",
+    repo: "https://github.com/Galuh1305/vigenere_chiper.git" // isi kalau ada repo github project
   }
   
 ];
